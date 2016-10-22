@@ -19,13 +19,11 @@ For a full example checkout go [here](./example/index.html)
 
 ### ES5
 ```javascript
-import { VueFancyForm } from 'vue-fancy-form';
-
 new Vue({
     el: '#app',
-    components: [
-        VueFancyForm,
-    ],
+    components: {
+        'VueFancyForm': window['vue-fancy-form'].VueFancyForm,
+    },
     data: [
         form: [ ... ],
     ],
@@ -34,11 +32,13 @@ new Vue({
 
 ### ES6
 ```javascript
+import {VueFancyForm} from 'vue-fancy-form';
+
 new Vue({
     el: '#app',
-    components: {
-        'VueFancyForm': window[ 'vue-fancy-form' ].VueFancyForm,
-    },
+    components: [
+        VueFancyForm,
+    ],
     data: [
         form: [ ... ],
     ],
