@@ -88,30 +88,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	  typeof __vue_exports__.default === "object" ||
 	  typeof __vue_exports__.default === "function"
 	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
 	__vue_options__ = __vue_exports__ = __vue_exports__.default
 	}
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "E:\\repos\\vue-fancy-form\\src\\form.vue"
+
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__._scopeId = "data-v-75e73716"
-
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-75e73716", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-75e73716", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] form.vue: functional components are not supported and should be defined in plain js files using render functions.")}
 
 	module.exports = __vue_exports__
 
@@ -151,7 +136,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 	// module
-	exports.push([module.id, "\n.form[data-v-75e73716] {\n  width: 18em;\n  max-width: 100%;\n  margin-left: auto;\n  margin-right: auto;\n  margin-top: 2em;\n  padding-left: 1em;\n  padding-right: 1em;\n  padding-top: 1.5em;\n  padding-bottom: .5em;\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);\n  background-color: #fff;\n  font-size: 1rem;\n}\n.form--processing .form__control--submit span[data-v-75e73716],\n.form--failure .form__control--submit span[data-v-75e73716],\n.form--success .form__control--submit span[data-v-75e73716] {\n  opacity: 0;\n}\n@keyframes spinning {\n0% {\n    transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, 0);\n}\n100% {\n    transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, 360deg);\n}\n}\n.form--processing .form__control--submit[data-v-75e73716]::after {\n  content: ' ';\n  display: block;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  transform: translate3d(-50%, -50%, 0);\n  width: .75rem;\n  height: .75rem;\n  border-radius: 50%;\n  border-style: solid;\n  border-width: 2px;\n  border-color: #777;\n  border-left-color: transparent;\n  animation-name: spinning;\n  animation-duration: 1s;\n  animation-iteration-count: infinite;\n  transition: opacity .3s;\n}\n.form--failure .form__control--submit[data-v-75e73716]::before, .form--failure .form__control--submit[data-v-75e73716]::after {\n  content: ' ';\n  display: block;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  width: .8rem;\n  height: 2px;\n  background-color: red;\n  transition: opacity .3s;\n}\n.form--failure .form__control--submit[data-v-75e73716]::before {\n  transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, 45deg);\n}\n.form--failure .form__control--submit[data-v-75e73716]::after {\n  transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg);\n}\n.form--success .form__control--submit[data-v-75e73716]::before, .form--success .form__control--submit[data-v-75e73716]::after {\n  content: ' ';\n  display: block;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  height: 2px;\n  background-color: green;\n}\n.form--success .form__control--submit[data-v-75e73716]::before {\n  width: .3rem;\n  transform: translate3d(-150%, 5%, 0) rotate3d(0, 0, 1, 45deg);\n}\n.form--success .form__control--submit[data-v-75e73716]::after {\n  width: .8rem;\n  transform: translate3d(-30%, -50%, 0) rotate3d(0, 0, 1, -45deg);\n}\n.form__controls[data-v-75e73716] {\n  text-align: right;\n}\n.form__control[data-v-75e73716] {\n  padding: 1em;\n  outline: none;\n  border: none;\n  background: none;\n}\n.form__control--cancel[data-v-75e73716] {\n  border: none;\n  font-size: .75rem;\n  color: #ccc;\n}\n.form__control--submit[data-v-75e73716] {\n  position: relative;\n}\n.form__control--submit:hover span[data-v-75e73716]::after {\n    width: 50%;\n}\n.form__control--submit span[data-v-75e73716] {\n    opacity: 1;\n    position: relative;\n    transition: opacity .1s;\n}\n.form__control--submit span[data-v-75e73716]::after {\n      content: ' ';\n      display: block;\n      width: 0;\n      height: 2px;\n      position: absolute;\n      left: 0;\n      bottom: -.3em;\n      background-color: #ccc;\n      transition: width .15s;\n}\n.form__failure-message[data-v-75e73716] {\n  margin-left: -1em;\n  margin-right: -1em;\n  margin-bottom: -.5em;\n  padding: 1em;\n  background-color: red;\n  color: #fff;\n}\n.form__failure-message p[data-v-75e73716] {\n    margin-top: 0;\n    margin-bottom: 0;\n    font-size: .75em;\n}\n", ""]);
+	exports.push([module.id, "\n.form[data-v-75e73716] {\n  width: 18em;\n  max-width: 100%;\n  margin-left: auto;\n  margin-right: auto;\n  margin-top: 2em;\n  padding-left: 1em;\n  padding-right: 1em;\n  padding-top: 1.5em;\n  padding-bottom: .5em;\n  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);\n  background-color: #fff;\n  font-family: sans-serif;\n  font-size: 16px;\n}\n.form--processing .form__control--submit span[data-v-75e73716],\n.form--failure .form__control--submit span[data-v-75e73716],\n.form--success .form__control--submit span[data-v-75e73716] {\n  opacity: 0;\n}\n@keyframes spinning {\n0% {\n    transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, 0);\n}\n100% {\n    transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, 360deg);\n}\n}\n.form--processing .form__control--submit[data-v-75e73716]::after {\n  content: ' ';\n  display: block;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  transform: translate3d(-50%, -50%, 0);\n  width: .75rem;\n  height: .75rem;\n  border-radius: 50%;\n  border-style: solid;\n  border-width: 2px;\n  border-color: #777;\n  border-left-color: transparent;\n  animation-name: spinning;\n  animation-duration: 1s;\n  animation-iteration-count: infinite;\n  transition: opacity .3s;\n}\n.form--failure .form__control--submit[data-v-75e73716]::before, .form--failure .form__control--submit[data-v-75e73716]::after {\n  content: ' ';\n  display: block;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  width: .8rem;\n  height: 2px;\n  background-color: red;\n  transition: opacity .3s;\n}\n.form--failure .form__control--submit[data-v-75e73716]::before {\n  transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, 45deg);\n}\n.form--failure .form__control--submit[data-v-75e73716]::after {\n  transform: translate3d(-50%, -50%, 0) rotate3d(0, 0, 1, -45deg);\n}\n.form--success .form__control--submit[data-v-75e73716]::before, .form--success .form__control--submit[data-v-75e73716]::after {\n  content: ' ';\n  display: block;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  height: 2px;\n  background-color: green;\n}\n.form--success .form__control--submit[data-v-75e73716]::before {\n  width: .3rem;\n  transform: translate3d(-150%, 5%, 0) rotate3d(0, 0, 1, 45deg);\n}\n.form--success .form__control--submit[data-v-75e73716]::after {\n  width: .8rem;\n  transform: translate3d(-30%, -50%, 0) rotate3d(0, 0, 1, -45deg);\n}\n.form__controls[data-v-75e73716] {\n  text-align: right;\n}\n.form__control[data-v-75e73716] {\n  cursor: pointer;\n  padding: 1em;\n  outline: none;\n  border: none;\n  background: none;\n  font-size: 1em;\n}\n.form__control--cancel[data-v-75e73716] {\n  border: none;\n  font-size: .75em;\n  color: #ccc;\n}\n.form__control--submit[data-v-75e73716] {\n  position: relative;\n}\n.form__control--submit:hover span[data-v-75e73716]::after {\n    width: 50%;\n}\n.form__control--submit span[data-v-75e73716] {\n    opacity: 1;\n    position: relative;\n    transition: opacity .1s;\n}\n.form__control--submit span[data-v-75e73716]::after {\n      content: ' ';\n      display: block;\n      width: 0;\n      height: 2px;\n      position: absolute;\n      left: 0;\n      bottom: -.3em;\n      background-color: #ccc;\n      transition: width .15s;\n}\n.form__failure-message[data-v-75e73716] {\n  margin-left: -1em;\n  margin-right: -1em;\n  margin-bottom: -.5em;\n  padding: 1em;\n  background-color: red;\n  color: #fff;\n}\n.form__failure-message p[data-v-75e73716] {\n    margin-top: 0;\n    margin-bottom: 0;\n    font-size: .75em;\n}\n", ""]);
 
 	// exports
 
@@ -576,30 +561,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	  typeof __vue_exports__.default === "object" ||
 	  typeof __vue_exports__.default === "function"
 	) {
-	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
 	__vue_options__ = __vue_exports__ = __vue_exports__.default
 	}
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "E:\\repos\\vue-fancy-form\\src\\input.vue"
+
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__._scopeId = "data-v-4dff5d2e"
-
-	/* hot reload */
-	if (false) {(function () {
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  module.hot.accept()
-	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-4dff5d2e", __vue_options__)
-	  } else {
-	    hotAPI.reload("data-v-4dff5d2e", __vue_options__)
-	  }
-	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] input.vue: functional components are not supported and should be defined in plain js files using render functions.")}
 
 	module.exports = __vue_exports__
 
@@ -639,7 +609,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 	// module
-	exports.push([module.id, "\n.input label[data-v-4dff5d2e] {\n  cursor: pointer;\n  font-size: .75em;\n  color: #ccc;\n}\n.input input[data-v-4dff5d2e] {\n  cursor: pointer;\n  width: 100%;\n  padding-left: 0;\n  padding-right: 0;\n  padding-top: .5em;\n  padding-bottom: .2em;\n  outline: none;\n  border: none;\n  background: none;\n}\n.input input:hover ~ span[data-v-4dff5d2e] {\n    width: 20%;\n}\n.input input[data-v-4dff5d2e]:focus {\n    cursor: text;\n}\n.input input:focus ~ span[data-v-4dff5d2e] {\n      width: 100%;\n}\n.input span[data-v-4dff5d2e] {\n  display: block;\n  width: 0;\n  height: 2px;\n  transition: width .15s;\n  margin-bottom: .75em;\n  background-color: #ddd;\n}\n.input p[data-v-4dff5d2e] {\n  visibility: hidden;\n  height: 1em;\n  margin-top: 0;\n  margin-bottom: 0;\n  font-size: .75em;\n  color: red;\n}\n.input--error input[data-v-4dff5d2e] {\n  color: red;\n}\n.input--error input:hover ~ span[data-v-4dff5d2e] {\n    width: 100%;\n}\n.input--error span[data-v-4dff5d2e] {\n  width: 100%;\n  background-color: red;\n}\n.input--error p[data-v-4dff5d2e] {\n  visibility: visible;\n}\n", ""]);
+	exports.push([module.id, "\n.input[data-v-4dff5d2e] {\n  padding-top: .5em;\n}\n.input[data-v-4dff5d2e]:nth-of-type(1) {\n    padding-top: 0;\n}\n.input label[data-v-4dff5d2e] {\n    cursor: pointer;\n    font-size: .75em;\n    color: #ccc;\n}\n.input input[data-v-4dff5d2e] {\n    cursor: pointer;\n    width: 100%;\n    padding-left: 0;\n    padding-right: 0;\n    padding-top: .5em;\n    padding-bottom: .2em;\n    outline: none;\n    border: none;\n    background: none;\n    font-size: inherit;\n}\n.input input:hover ~ span[data-v-4dff5d2e] {\n      width: 20%;\n}\n.input input[data-v-4dff5d2e]:focus {\n      cursor: text;\n}\n.input input:focus ~ span[data-v-4dff5d2e] {\n        width: 100%;\n}\n.input span[data-v-4dff5d2e] {\n    display: block;\n    width: 0;\n    height: 2px;\n    transition: width .15s;\n    margin-bottom: .5em;\n    background-color: #ddd;\n}\n.input p[data-v-4dff5d2e] {\n    visibility: hidden;\n    height: 1em;\n    margin-top: 0;\n    margin-bottom: .5em;\n    font-size: .75em;\n    color: red;\n}\n.input--error input[data-v-4dff5d2e] {\n  color: red;\n}\n.input--error input:hover ~ span[data-v-4dff5d2e] {\n    width: 100%;\n}\n.input--error span[data-v-4dff5d2e] {\n  width: 100%;\n  background-color: red;\n}\n.input--error p[data-v-4dff5d2e] {\n  visibility: visible;\n}\n", ""]);
 
 	// exports
 
@@ -674,7 +644,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 /***/ },
 /* 11 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
 	module.exports={render:function (){with(this) {
 	  return _h('div', {
@@ -738,16 +708,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	}},staticRenderFns: [function (){with(this) {
 	  return _h('span')
 	}}]}
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-hot-reload-api").rerender("data-v-4dff5d2e", module.exports)
-	  }
-	}
 
 /***/ },
 /* 12 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
 	module.exports={render:function (){with(this) {
 	  return _h('form', {
@@ -787,12 +751,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	}},staticRenderFns: [function (){with(this) {
 	  return _h('span', ["submit"])
 	}}]}
-	if (false) {
-	  module.hot.accept()
-	  if (module.hot.data) {
-	     require("vue-hot-reload-api").rerender("data-v-75e73716", module.exports)
-	  }
-	}
 
 /***/ }
 /******/ ])

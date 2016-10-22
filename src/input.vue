@@ -20,6 +20,12 @@
 
 <style lang="sass" scoped>
     .input {
+        padding-top: .5em;
+
+        &:nth-of-type(1) {
+            padding-top: 0;
+        }
+
         label {
             cursor: pointer;
 
@@ -40,6 +46,8 @@
             outline: none;
             border: none;
             background: none;
+
+            font-size: inherit;
 
             &:hover {
                 ~ span {
@@ -63,7 +71,7 @@
             height: 2px;
             transition: width .15s;
 
-            margin-bottom: .75em;
+            margin-bottom: .5em;
 
             background-color: #ddd;
         }
@@ -74,7 +82,7 @@
             height: 1em;
 
             margin-top: 0;
-            margin-bottom: 0;
+            margin-bottom: .5em;
 
             font-size: .75em;
             color: red;

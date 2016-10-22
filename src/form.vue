@@ -97,7 +97,8 @@
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
         background-color: #fff;
 
-        font-size: 1rem;
+        font-family: sans-serif;
+        font-size: 16px;
     }
 
 
@@ -217,18 +218,22 @@
 
 
     .form__control {
+        cursor: pointer;
+
         padding: 1em;
 
         outline: none;
         border: none;
         background: none;
+
+        font-size: 1em;
     }
 
 
     .form__control--cancel {
         border: none;
 
-        font-size: .75rem;
+        font-size: .75em;
         color: #ccc;
     }
 
