@@ -7,6 +7,7 @@
         p(v-if='input.error') {{input.error}}
 </template>
 
+
 <script>
     export default {
         props: {
@@ -17,6 +18,7 @@
         },
     }
 </script>
+
 
 <style lang="sass" scoped>
     .input {

@@ -10,6 +10,7 @@
             p {{failureMessage}}
 </template>
 
+
 <script>
     import inputComponent from './input.vue';
 
@@ -83,6 +84,7 @@
         },
     }
 </script>
+
 
 <style lang="sass" scoped>
     .form {

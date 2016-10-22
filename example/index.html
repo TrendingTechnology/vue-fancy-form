@@ -36,9 +36,7 @@
                             }, Math.random() * (2000 - 500) + 500);
                         },
                         cancel: function(vm, done) {
-                            for (const input of vm.options.inputs) {
-                                input.value = '';
-                            }
+                            for (const input of vm.options.inputs) input.value = '';
                         },
                         inputs: [
                             {
