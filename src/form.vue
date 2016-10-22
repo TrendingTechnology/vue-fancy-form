@@ -3,8 +3,8 @@
         input-component(v-for='input in options.inputs', :input.sync='input')
 
         .form__controls
-            button(@click.prevent='').form__control.form__control--cancel cancel
-            button(:disabled="state === 'processing' || state === 'failure' || state === 'success'").form__control.form__control--submit: span submit
+            button(@click.prevent='cancelHandler').form__control.form__control--cancel {{options.controls.cancel.text}}
+            button(:disabled="state === 'processing' || state === 'failure' || state === 'success'").form__control.form__control--submit: span {{options.controls.submit.text}}
 
         div(v-if='failureMessage').form__failure-message
             p {{failureMessage}}
@@ -61,7 +61,7 @@
                     return;
                 }
 
-                this.options.submit(failureMessage => {
+                this.options.submit(this, failureMessage => {
                     if (failureMessage) {
                         this.state = 'failure';
                         this.failureMessage = failureMessage;
@@ -73,6 +73,9 @@
                         this.state = 'default';
                     }, 3000);
                 });
+            },
+            cancelHandler: function() {
+                this.options.cancel(this, () => {});
             },
         },
         components: {

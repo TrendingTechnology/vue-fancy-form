@@ -512,7 +512,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                return;
 	            }
 
-	            this.options.submit(function (failureMessage) {
+	            this.options.submit(this, function (failureMessage) {
 	                if (failureMessage) {
 	                    _this.state = 'failure';
 	                    _this.failureMessage = failureMessage;
@@ -524,6 +524,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    _this.state = 'default';
 	                }, 3000);
 	            });
+	        },
+	        cancelHandler: function cancelHandler() {
+	            this.options.cancel(this, function () {});
 	        }
 	    },
 	    components: {
@@ -738,19 +741,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	    on: {
 	      "click": function($event) {
 	        $event.preventDefault();
+	        cancelHandler($event)
 	      }
 	    }
-	  }, ["cancel"]), _h('button', {
+	  }, [_s(options.controls.cancel.text)]), _h('button', {
 	    staticClass: "form__control form__control--submit",
 	    attrs: {
 	      "disabled": state === 'processing' || state === 'failure' || state === 'success'
 	    }
-	  }, [_m(0)])]), (failureMessage) ? _h('div', {
+	  }, [_h('span', [_s(options.controls.submit.text)])])]), (failureMessage) ? _h('div', {
 	    staticClass: "form__failure-message"
 	  }, [_h('p', [_s(failureMessage)])]) : _e()])
-	}},staticRenderFns: [function (){with(this) {
-	  return _h('span', ["submit"])
-	}}]}
+	}},staticRenderFns: []}
 
 /***/ }
 /******/ ])
