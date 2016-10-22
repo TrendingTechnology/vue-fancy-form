@@ -4,7 +4,8 @@
   "description": "",
   "main": "./dist/fancy-form.js",
   "scripts": {
-    "build": "rm -rf ./dist && webpack"
+    "build": "rm -rf ./dist && webpack",
+    "dev": "rm -rf ./dist && webpack --watch"
   },
   "repository": {
     "type": "git",
