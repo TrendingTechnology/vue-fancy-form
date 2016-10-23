@@ -12,7 +12,7 @@ Vue component for forms and inline validation
 ```
 
 ### ES5 without module loader
-For a full example checkout go [here](./example/es5)
+For a full example go [here](./example/es5)
 
 ```javascript
 new Vue({
