@@ -11,8 +11,8 @@ Vue component for forms and inline validation
 </div>
 ```
 
-### ES5 with no module loader
-For a full example checkout go [here](./example/es5/index.html)
+### ES5 without module loader
+For a full example checkout go [here](./example/es5)
 
 ```javascript
 new Vue({
