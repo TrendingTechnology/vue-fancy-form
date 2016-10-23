@@ -88,20 +88,6 @@
 
 <style lang="sass" scoped>
     .form {
-        width: 18em;
-        max-width: 100%;
-
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 2em;
-        padding-left: 1em;
-        padding-right: 1em;
-        padding-top: 1.5em;
-        padding-bottom: .5em;
-
-        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-        background-color: #fff;
-
         font-family: sans-serif;
         font-size: 16px;
     }

@@ -18,7 +18,10 @@ new Vue({
             },
             cancel: function(vm, done) {
                 // Example for custom cancel handling
-                for (var i = 0; i < vm.options.inputs.length; i++) vm.options.inputs[i].value = '';
+                for (var i = 0; i < vm.options.inputs.length; i++) {
+                    vm.options.inputs[i].value = ''
+                    vm.$delete(vm.options.inputs[i], 'error');
+                };
             },
             inputs: [
                 {
