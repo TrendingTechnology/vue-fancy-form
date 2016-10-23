@@ -2,7 +2,7 @@
   "name": "vue-fancy-form",
   "version": "0.1.0",
   "description": "",
-  "main": "./dist/fancy-form.js",
+  "main": "./dist/vue-fancy-form.js",
   "scripts": {
     "build": "rm -rf ./dist && webpack",
     "dev": "rm -rf ./dist && webpack --watch"

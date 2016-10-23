@@ -1,8 +1,8 @@
 # vue-fancy-form
+Vue component for forms and inline validation
 
 
 ## Usage
-For a full example checkout go [here](./example/index.html)
 
 ### HTML
 ```html
@@ -11,13 +11,9 @@ For a full example checkout go [here](./example/index.html)
 </div>
 ```
 
-### PUG
-```html
-#app
-    vue-fancy-form(:options.sync='form')
-```
+### ES5 with no module loader
+For a full example checkout go [here](./example/es5/index.html)
 
-### ES5
 ```javascript
 new Vue({
     el: '#app',
@@ -30,7 +26,9 @@ new Vue({
 });
 ```
 
-### ES6
+### ES6 with module loader
+`npm install --save vue-fancy-form`
+
 ```javascript
 import {VueFancyForm} from 'vue-fancy-form';
 
@@ -45,7 +43,5 @@ new Vue({
 });
 ```
 
-
-Initial development: https://codepen.io/Index/pen/WxxYGV
 
 [LICENSE](./LICENSE)
