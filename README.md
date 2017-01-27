@@ -1,4 +1,6 @@
 # vue-fancy-form
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/simonknittel/vue-fancy-form.svg)](https://greenkeeper.io/)
 Vue component for forms and inline validation
 
 
